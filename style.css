@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.message {
+    height: 5vh;
+}
+
+.contanier {
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(3, 3, 84);
+}
+
+.text {
+    text-wrap: nowrap;
+}
+
+.text span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.login {
+    display: flex;
+    gap: 1rem;
+}
+
+.login h4 {
+    border-right: 3px solid white;
+    padding: 0px 10px;
+}
+
+.login h4:hover {
+    color: rgb(65, 65, 255);
+}
+
+.login button {
+    width: 8rem;
+    border: none;
+    font-size: large;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 15px;
+
+}
+
+.login button:hover {
+    background-color: rgb(65, 65, 255);
+    color: white;
+}
+
+
+
+
+
+
+/* for mobile responsive */
+@media(max-width:500px) {
+    .contanier {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 15px 0px;
+    }
+
+    .text {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .login {
+        gap: 1rem;
+        margin-left: 30px;
+    }
+
+    .login h4 {
+        font-size: 16px;
+        text-align: center;
+    }
+}
