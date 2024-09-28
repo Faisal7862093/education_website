@@ -4,6 +4,7 @@
     font-family: sans-serif;
 }
 
+/* upper header style started */
 .message {
     height: 5vh;
 }
@@ -54,9 +55,35 @@
     color: white;
 }
 
+/* upper header style ended */
+
+/* navigaion style started */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 15% 0px 15%;
+}
+
+.logo img {
+    animation: slideInLeft 1s ease-out;
+}
+
+.bar img {
+    animation: slideInLeft 1s  reverse;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
 
 
-
+/* navigation style ended */
 
 
 /* for mobile responsive */
@@ -80,5 +107,9 @@
     .login h4 {
         font-size: 16px;
         text-align: center;
+    }
+
+    .navigation {
+        margin: 20% 8% 0px 8%;
     }
 }
