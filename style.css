@@ -69,7 +69,7 @@
 }
 
 .bar img {
-    animation: slideInLeft 1s  reverse;
+    animation: slideInLeft 1s reverse;
 }
 
 @keyframes slideInLeft {
@@ -84,6 +84,67 @@
 
 
 /* navigation style ended */
+
+/* hero section started*/
+
+.hero_section {
+    padding: 80px;
+}
+
+.hero_logo img {
+    width: 8rem;
+    margin-left: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.hero_heading {
+    padding: 20px 0px;
+}
+
+.hero_heading h1 {
+    font-size: 40px;
+    color: rgb(3, 3, 84);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.hero_heading p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+.hero_heading button {
+    margin-top: 30px;
+    padding: 15px 35px;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+    background-color: rgb(3, 145, 3);
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease-in-out,
+        color 0.3s ease-in-out;
+}
+
+.hero_heading button:hover {
+    background-color: #0056b2;
+    color: #fff;
+
+}
+
+.hero_image img {
+    width: 22rem;
+    border-radius: 30px;
+}
+
+/* hero section ended*/
 
 
 /* for mobile responsive */
@@ -111,5 +172,43 @@
 
     .navigation {
         margin: 20% 8% 0px 8%;
+    }
+
+    .hero_section {
+        padding: 70px 30px;
+    }
+
+    .hero_logo img {
+        margin-left: -10px;
+    }
+
+    .content {
+        display: grid;
+    }
+
+    .hero_heading {
+        grid-template-columns: 1;
+        padding: 20px;
+
+    }
+
+    .hero_heading h1 {
+        font-size: 28px;
+    }
+
+    .hero_heading p {
+        font-size: 18px;
+        line-height: 1.5rem;
+    }
+
+    .hero_heading button {
+        padding: 10px 30px;
+        margin-bottom: 20px;
+    }
+
+    .hero_image img {
+        width: 18rem;
+        margin-left: 20px;
+        border-radius: 30px;
     }
 }
