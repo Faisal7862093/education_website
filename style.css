@@ -89,6 +89,7 @@
 
 .hero_section {
     padding: 80px;
+    margin-left: 4rem;
 }
 
 .hero_logo img {
@@ -146,6 +147,42 @@
 
 /* hero section ended*/
 
+/* department section started */
+.department_section {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    margin: 4rem 10rem 5rem 15rem;
+    box-shadow: 3px 3px gray;
+}
+
+.depar_head {
+    margin-top: -4rem;
+    margin-left: -3rem;
+}
+
+.depar_head h1 {
+    font-size: 40px;
+    line-height: 5rem;
+}
+
+.depar_head p {
+    font-size: 18px;
+    line-height: 1.5rem;
+    color: rgb(87, 86, 86);
+}
+
+.all_courses a {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.all_courses a:hover {
+    color: #0056b2;
+}
+
+/* department section ended */
 
 /* for mobile responsive */
 @media(max-width:500px) {
@@ -175,7 +212,8 @@
     }
 
     .hero_section {
-        padding: 70px 30px;
+        padding: 70px 0px;
+        margin-left: 2.5rem;
     }
 
     .hero_logo img {
@@ -211,4 +249,44 @@
         margin-left: 20px;
         border-radius: 30px;
     }
+
+    .department_section {
+        display: grid;
+        grid-row: 1;
+        grid-template-columns: 1;
+        gap: 4rem;
+        box-shadow: none;
+        margin-top: -10px;
+    }
+
+    .depar_head {
+        margin-left: -15rem;
+    }
+
+
+    .depar_head h1 {
+        font-size: 40px;
+        line-height: 5rem;
+    }
+
+    .depar_head p {
+        font-size: 18px;
+        line-height: 1.5rem;
+        color: rgb(87, 86, 86);
+    }
+
+    .all_courses {
+        margin-left: -12rem;
+    }
+
+    .all_courses a {
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .all_courses a:hover {
+        color: #0056b2;
+    }
+
 }
